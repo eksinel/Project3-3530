@@ -1,0 +1,64 @@
+{
+    "tests": [
+    {
+        "name": "main compiles",
+        "setup": "",
+        "run": "timeout 30 make main",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 10
+    },
+    {
+        "name": "main runs",
+        "setup": "",
+        "run": "timeout 20 make -f test.mk test-run",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 10
+    },
+    {
+        "name": "main outputs shows total item sizes loaded",
+        "setup": "",
+        "run": "timeout 20 make -f test.mk check-output-total",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 10
+    },
+    {
+        "name": "main outputs shows correct result for optimal run",
+        "setup": "",
+        "run": "timeout 20 make -f test.mk check-output-optimal",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 10
+    },
+    {
+        "name": "main outputs shows correct result for online run",
+        "setup": "",
+        "run": "timeout 20 make -f test.mk check-output-online",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 15
+    },
+    {
+        "name": "main outputs shows correct result for online run",
+        "setup": "",
+        "run": "timeout 20 make -f test.mk check-output-offline",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 1,
+        "points": 15
+    }
+    ]
+}
